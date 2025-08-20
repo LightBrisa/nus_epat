@@ -21,7 +21,6 @@ jobs:
         cache: maven
     - name: Perform the Unit Test Cases
       run: mvn -B test
-
     - name: Make mvnw executable (fix CRLF)
       run: |
         sed -i 's/\r$//' mvnw
